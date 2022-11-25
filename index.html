@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <h1 class="title">NFL Scoreboard</h1>
+    </div>
+    <div class="container">
+      <div>
+        <h3 class="team">Ravens</h3>
+        <h1 id="home-count">0</h1>
+        <button class="score-btn" onclick="scorePointsHomeTeam(1)">+1</button>
+        <button class="score-btn" onclick="scorePointsHomeTeam(2)">+2</button>
+        <button class="score-btn" onclick="scorePointsHomeTeam(3)">+3</button>
+        <button class="score-btn" onclick="scorePointsHomeTeam(6)">+6</button>
+      </div>
+      <div>
+        <h3 class="team">Cowboys</h3>
+        <h1 id="away-count">0</h1>
+        <button class="score-btn" onclick="scorePointsAwayTeam(1)">+1</button>
+        <button class="score-btn" onclick="scorePointsAwayTeam(2)">+2</button>
+        <button class="score-btn" onclick="scorePointsAwayTeam(3)">+3</button>
+        <button class="score-btn" onclick="scorePointsAwayTeam(6)">+6</button>
+      </div>
+    </div>
+    <div class="reset">
+      <button class="reset-btn" onclick="resetScore()">RESET</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
